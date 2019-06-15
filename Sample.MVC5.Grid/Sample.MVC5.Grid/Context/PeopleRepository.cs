@@ -21,9 +21,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Crosswave",
                     ////MaritalStatus = MaritalStatus.Married,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1988, 01, 05)).TotalDays / 365,
-                    Birthday = new DateTime(1988, 01, 05),
-                    IsWorking = false
+                    //Age = (Int32) (DateTime.Now - new DateTime(1988, 01, 05)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 01),
+                    Confirmed = false
                 },
                 new Person
                 {
@@ -32,8 +32,8 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Lisel",
                     ////MaritalStatus = MaritalStatus.Widowed,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1978, 05, 06)).TotalDays / 365,
-                    Birthday = new DateTime(1978, 05, 06)
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1978, 05, 06)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 02),
                 },
                 new Person
                 {
@@ -42,9 +42,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Crux",
                     ////MaritalStatus = MaritalStatus.Single,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1990, 11, 19)).TotalDays / 365,
-                    Birthday = new DateTime(1990, 11, 19),
-                    IsWorking = true
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1990, 11, 19)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 03),
+                    Confirmed = true
                 },
                 new Person
                 {
@@ -52,9 +52,9 @@ namespace Sample.MVC5.Grid.Context
                     Name = "Cody",
                     Surname = "Jurut",
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1970, 08, 11)).TotalDays / 365,
-                    Birthday = new DateTime(1970, 08, 11),
-                    IsWorking = false
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1970, 08, 11)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 04),
+                    Confirmed = false
                 },
                 new Person
                 {
@@ -63,8 +63,8 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Scranton",
                     ////MaritalStatus = MaritalStatus.Single,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1985, 10, 10)).TotalDays / 365,
-                    Birthday = new DateTime(1985, 10, 10)
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1985, 10, 10)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 05),
                 },
                 new Person
                 {
@@ -73,9 +73,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Laurent",
                     ////MaritalStatus = MaritalStatus.Divorced,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(2000, 07, 01)).TotalDays / 365,
-                    Birthday = new DateTime(2000, 07, 01),
-                    IsWorking = false
+                    ////Age = (Int32) (DateTime.Now - new DateTime(2000, 07, 01)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 06),
+                    Confirmed = false
                 },
                 new Person
                 {
@@ -84,9 +84,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Cosmides",
                     ////MaritalStatus = MaritalStatus.Married,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1966, 04, 17)).TotalDays / 365,
-                    Birthday = new DateTime(1966, 04, 17),
-                    IsWorking = true,
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1966, 04, 17)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 10),
+                    Confirmed = true,
                     
                 },
                 new Person
@@ -96,9 +96,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Mizner",
                     ////MaritalStatus = MaritalStatus.Single,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1999, 08, 20)).TotalDays / 365,
-                    Birthday = new DateTime(1999, 08, 20),
-                    IsWorking = false
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1999, 08, 20)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 11),
+                    Confirmed = false
                 },
                 new Person
                 {
@@ -107,9 +107,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Cassel",
                     ////MaritalStatus = MaritalStatus.Married,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1997, 03, 13)).TotalDays / 365,
-                    Birthday = new DateTime(1997, 03, 13),
-                    IsWorking = false
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1997, 03, 13)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 12),
+                    Confirmed = false
                 },
                 new Person
                 {
@@ -118,9 +118,9 @@ namespace Sample.MVC5.Grid.Context
                     Surname = "Tremblay",
                     ////MaritalStatus = MaritalStatus.Married,
 
-                    Age = (Int32) (DateTime.Now - new DateTime(1988, 01, 05)).TotalDays / 365,
-                    Birthday = new DateTime(1988, 01, 05),
-                    IsWorking = true,
+                    ////Age = (Int32) (DateTime.Now - new DateTime(1988, 01, 05)).TotalDays / 365,
+                    ActivateDate = new DateTime(2019, 06, 13),
+                    Confirmed = true,
                     
                 }
             }.ToList();

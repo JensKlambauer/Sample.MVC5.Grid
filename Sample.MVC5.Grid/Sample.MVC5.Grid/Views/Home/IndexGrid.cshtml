@@ -10,9 +10,9 @@
           columns.Add(model => model.Surname).Titled("Surname");
           ////columns.Add(model => model.MaritalStatus).Titled("Marital status");
 
-          columns.Add(model => model.Age).Titled("Age");
-          columns.Add(model => model.Birthday).Titled("Birthday").Formatted("{0:d}");
-          columns.Add(model => model.IsWorking).Titled("Employed");
+          ////columns.Add(model => model.Age).Titled("Age");
+          columns.Add(model => model.ActivateDate).Titled("ActivateDate").Formatted("{0:dd.MM.yyyy}").InitialSort(GridSortOrder.Desc);
+          columns.Add(model => model.Confirmed).Titled("Email confirmred").RenderedAs(model => model.Confirmed ? "Ja" : "Nein").Css("limited3-width");
       })
       .Empty("No data found")
       .Id("my-ajax-grid")
@@ -23,5 +23,6 @@
       })
       .Filterable()
       .Sortable()
+      .Css("table-hover")
 )
 

@@ -19,11 +19,11 @@ namespace Sample.MVC5.Grid.Models
         [Display(Name = "Age")]
         public Int32 Age { get; set; }
 
-        [Display(Name = "Birthday")]
-        public DateTime Birthday { get; set; }
+        [Display(Name = "Activatedate")]
+        public DateTime ActivateDate { get; set; }
 
-        [Display(Name = "Employed")]
-        public Boolean? IsWorking { get; set; }
+        [Display(Name = "Email confirmed")]
+        public Boolean Confirmed { get; set; }
 
         ////[Display(Name = "Marital status")]
         ////public MaritalStatus? MaritalStatus { get; set; }
@@ -33,6 +33,7 @@ namespace Sample.MVC5.Grid.Models
         public Person()
         {
             Children = new List<Person>();
+            this.Confirmed = false;
         }
     }
 }

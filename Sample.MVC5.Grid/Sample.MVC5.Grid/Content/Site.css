@@ -22,3 +22,20 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.mvc-grid-filter.applied::before {
+    color: red;
+    /*font-size: 1.2em;*/
+}
+
+.mvc-grid {
+    font-size: 14px !important;
+}
+
+.mvc-grid-title {
+    font-size: 12px !important;
+}
+
+.mvc-grid-popup {
+    font-size: 14px !important;
+}

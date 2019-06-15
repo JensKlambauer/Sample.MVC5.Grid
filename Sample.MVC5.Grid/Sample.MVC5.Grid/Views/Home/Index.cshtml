@@ -8,11 +8,48 @@
 
 @section scripts{
     <script type="text/javascript">
+        var JqueryUIDateFilter = (function (base) {
+            MvcGridExtends(JqueryUIDateFilter, base);
+
+            function JqueryUIDateFilter(column) {
+                base.call(this, column);
+
+                this.methods = ['equals', 'not-equals', 'later-than', 'earlier-than'];
+            }
+
+            JqueryUIDateFilter.prototype.bindValues = function (column) {
+                var filter = this;
+
+                base.prototype.bindValues.call(this, column);
+
+                [].forEach.call(filter.popup.element.querySelectorAll('.mvc-grid-value'), function (input) {
+                    $(input).datepicker();
+                });
+            };
+
+            return JqueryUIDateFilter;
+        })(MvcGridFilter);
+
         $(document).ready(function () {
-            var grid = document.querySelector('.mvc-grid');
-            new MvcGrid(grid);
-           
+            var originalHide = MvcGridPopup.prototype.hide;
+            MvcGridPopup.prototype.hide = function (e) {
+                if (!$(e && e.target).parents('.ui-datepicker').length) {
+                    originalHide.call(this, e);
+                }
+            };
+
+            [].forEach.call(document.getElementsByClassName('mvc-grid'), function (element) {
+                new MvcGrid(element, {
+                    filters: {'date': JqueryUIDateFilter }
+                });
+            });
         });
+
+        ////$(document).ready(function () {
+        ////    var grid = document.querySelector('.mvc-grid');
+        ////    new MvcGrid(grid);
+           
+        ////});
     </script>
 }
 

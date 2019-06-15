@@ -1,1 +1,1 @@
-# Sample.MVC5.Grid
+# Sample MVC with NonFactors MVC5.Grid

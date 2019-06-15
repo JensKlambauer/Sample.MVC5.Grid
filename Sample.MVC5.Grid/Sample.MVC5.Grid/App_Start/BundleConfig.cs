@@ -20,10 +20,12 @@ namespace Sample.MVC5.Grid
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/MvcGrid/mvc-grid.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/MvcGrid/mvc-grid.css",
                       "~/Content/site.css"));
         }
     }

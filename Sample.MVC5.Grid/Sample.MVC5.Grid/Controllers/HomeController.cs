@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Sample.MVC5.Grid.Context;
 
 namespace Sample.MVC5.Grid.Controllers
 {
@@ -11,6 +9,13 @@ namespace Sample.MVC5.Grid.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpGet]
+        public PartialViewResult IndexGrid()
+        {
+            var people = PeopleRepository.GetPeople();
+            return PartialView("IndexGrid", people.ToList());
         }
 
         public ActionResult About()
